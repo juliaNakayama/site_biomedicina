@@ -1,0 +1,355 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Fundo-tela */
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: rgb(0, 0, 0);
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    background-image: url(../img/back.webp);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+/* Menu - Header - NavBar */
+header {
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(22, 22, 22, 0.2);
+    position: fixed;
+}
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+.menu-content .list-itens {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+    
+}
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+.menu-content .list-itens a:before {
+    content: ' ';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: rgb(255, 0, 0);
+    transition: all 1.5s ease; 
+}
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+main {
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.primary-text {
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.second-text {
+    margin-bottom: 7rem;
+    font-size: 2rem;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+}
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+}
+.btns button {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+.btns button:hover {
+    color: rgb(27, 91, 187);
+    border: none;
+}
+.btns button:before {
+    content: ' ';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    z-index: -1;
+    transition: 1s;
+}
+.btns button:hover:before {
+    width: 100%;
+}
+.sep{
+    width: 100%;
+    height: 60px;
+}
+/* Pagina perfil, topicos */
+
+.teste{
+    width: 100%;
+    height: 150px;
+    background-color: #bde0fe;
+
+}
+.letreiroteste{
+    font-size: 60px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+ ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    justify-content: first baseline;
+
+}
+.topicos{
+    width: 100%;
+    height: 250px;
+    background-color: #bde0fe;
+}
+.topicos2{
+    width: 100%;
+    height: 250px;
+    background-color: #bde0fe;
+}
+/*pagina sobre o curso*/
+.paginasobre{
+  width: 100%;
+  height: 450px;
+  background-color: #bde0fe;
+  position: absolute, fixed;
+  
+}
+.imgpaginasobre{
+  width: 75%;
+  height: 450px;
+}
+.conteudosobre{
+  width: 825px;
+  height: 360px;
+  background-color: #4cc9f0;
+  position: absolute;
+  top: 1450px;
+  left: 600px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 17px;
+}
+/*continuação pagina sobre*/
+
+
+/*pagina faculdades*/
+.paginafaculdades{
+  width: 100%;
+  height: 100px;
+  background-color: #0077b6;
+  font-size: 50px;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  color: #33db96;
+}
+/* Pagina com slider card */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+
+section{
+  position: relative;  
+  height: 450px;
+  width: 1400px;
+  display: flex;
+  align-items: center;
+}
+
+.swiper{
+  width: 950px;
+  
+}
+
+.card{
+  position: relative;
+  background: rgb(255, 255, 255);
+  border-radius: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  
+  
+}
+/* enfeitar a parte de cima da caixa 
+.card::before{
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 100%;
+  background: #ccc8d1;
+  border-radius: 20px 20px 0 0;
+  
+}
+*/
+.card .card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+  z-index: 100;
+  
+}
+
+section .card .image{
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  padding: 3px;
+  background: #ffffff;
+  
+}
+
+section .card .image img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+
+
+.card .name-profession{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+
+} 
+
+.name-profession .name{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.card .button{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card .button button{
+  background: #7d2ae8;
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 8px 22px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.button button:hover{
+  background: #000000;
+}
+
+.swiper-pagination{
+  position: absolute;
+}
+
+.swiper-pagination-bullet{
+  height: 7px;
+  width: 26px;
+  border-radius: 25px;
+  background: #000000;
+}
+
+.swiper-button-next, .swiper-button-prev{
+  opacity: 0.3;
+  color: #000000;
+  transition: all 0.3s ease;
+}
+.swiper-button-next:hover, .swiper-button-prev:hover{
+  opacity: 1;
+  color: #7d2ae8;
+}
+
+.slidercard{
+    width: 770px;
+    height: 500px;
+    background-color: #0077b6;
+}
+.slidercard1{
+    background-color: #0077b6;
+}
+/*pagina do depoimento*/
+.fiquepordentro{
+  width: 100%;
+  height: 90px;
+  background-color: #2a6f97;
+  font-size: 50px;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  color: #33db96;
+}
+.paginavideo{
+  width: 100%;
+  height: 500px;
+  background-color: #2a6f97;
+  align-items: center;
+  text-align: center;
+}
+/*pagina grade curricular*/
+.paginagrade{
+  width: 100%;
+  height: 500px;
+  background-color: #2c7da0;
+}
+
